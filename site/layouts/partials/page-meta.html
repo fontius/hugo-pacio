@@ -1,0 +1,8 @@
+	<!-- Page meta for blog posts with Categories removed -->
+
+{{- if eq .Type "post" -}} 
+	Posted {{ partial "page-date.html" . -}}
+	<!-- Remove CATERGORIES for now until blog section pages increase eg 50 pages.
+		{{- with .Params.categories }} in {{ partial "page-categories.html" . }}{{ end }} -->
+	{{- with .Params.tags }} - in | {{ partial "page-tags.html" . }}{{ end }}
+{{- end -}}

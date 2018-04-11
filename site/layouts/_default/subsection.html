@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<!-- Breadcrumbs used for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+	Each will be presented as a single page with a breadcrumb menu at the top
+	allowing for navigation among related pages in the section.
+
+	REMOVE breadcrumb nav menu for sidebar scroll, use bread crumbs options for smaller
+	sections with just a few pages.
+
+ADD  layout: sidebar.html by copying this file, create sidebar menu partial see (section-crumbs.html partial)
+Create partial for sidebar
+add frontmatter settings for section.html and partial
+-->
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/subsection.html</p>{{ end -}}
+<section class="hero is-small is-info">
+		<!-- Hero caption -->
+		<div class="hero-body ">
+		  <div class="container has-text-centered mt-60">
+			  <div class="columns is-vcentered">
+				  <div class="column is-6 is-offset-3 has-text-centered has-text-success">
+					  <h1 class="title is-3">
+						{{ .Title }}
+					  </h1>
+					  <h2 class="subtitle is-5 light-text">
+						{{ .Description }}
+					  </h2>
+					  <br>
+				   
+				  </div>
+			  </div>
+		  </div> 
+	  </div>
+	</section>
+
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+					{{ partial "section-crumbs.html" . }}
+					<hr>
+				<article class="content">
+					<h1 class="title is-3">{{ .Title }}</h1>
+					{{- partial "page-status.html" . -}}
+					{{- .Content }}
+					<hr>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}

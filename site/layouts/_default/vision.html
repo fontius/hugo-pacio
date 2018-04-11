@@ -1,0 +1,185 @@
+{{ define "main" }}
+<!-- use for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+	Each will be presented as a single page with a breadcrumb menu at the top
+	allowing for navigation among related pages in the section.
+
+-->
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/vision.html</p>{{ end -}}
+<section class="hero is-medium is-info">
+	<!-- Hero caption -->
+	<div class="hero-body ">
+	  <div class="container has-text-centered pt-30">
+		  <div class="columns is-vcentered">
+			  <div class="column is-6 is-offset-3 has-text-centered has-text-success">
+				  <h1 class="title is-3">
+					{{ .Title }}
+				  </h1>
+				  <h2 class="subtitle is-5 light-text">
+					{{ .Description }}
+				  </h2>
+				  <br>
+			   
+			  </div>
+		  </div>
+	  </div> 
+  </div>
+</section>
+
+<!-- /Main Content Layout-->
+<!-- /Main Content Heading -->
+<section class="section">
+	  <div class="section product-header has-text-centered">
+			  <div class="container">
+			  <div class="columns">
+				  <div class="column">
+				  <span class="title is-3">Trusted</span>
+				  <span class="title is-3 has-text-muted">&nbsp;|&nbsp;</span>
+				  <span class="title is-4 has-text-muted">Semantic Blockchain</span>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </section> 
+
+  <!-- UI section First -->
+  <section class="section">
+	  <!-- UI block -->
+	  <div class="columns is-vcentered">
+		  <!-- Content -->
+			  <!-- Large UI -->
+			  <div class="column is-6">
+			  <img src="assets/images/globalytics.png" alt="">
+		  </div>
+			  <div class="column is-6">
+				  <div class="icon-subtitle"><i class="im im-icon-Laptop-Phone"></i></div>
+				  <h2 class="title is-size-4">
+					 Vision Intro text
+				  </h2>
+				   <div class="content">
+					{{- .Content }}
+					  <hr>
+				  </div>
+				  </div>
+				  </div>  
+			  </div>
+	  <!-- /UI block -->
+	  </div>
+		</section>
+		   <!-- /UI block for Second Vision -->
+		 <section class="section">
+			  <div class="section product-header has-text-centered">
+					  <div class="container">
+					  <div class="columns">
+						  <div class="column">
+						  <span class="title is-3">Track</span>
+						  <span class="title is-3 has-text-muted">&nbsp;|&nbsp;</span>
+						  <span class="title is-4 has-text-muted">and keep score</span>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+		 <!-- /UI section -->
+		  <!-- UI section -->
+		  <section class="section">
+			 <!-- UI block -->
+			 <div class="columns is-vcentered">
+				<!-- Content -->
+					<div class="column is-6">
+						<h2 class="title section-subtitle dark-text text-bold is-2">
+							Pacio Technology
+						</h2>
+						<span class="section-feature-description content"><p>The Pacio platform will simplify development of decentralised apps, whether blockchain based or not, and make it feasible for apps requiring inter entity operation to achieve scale.</p>
+							<p>Pacio will help set accounting and semantic data standards for the decentralised technology era and become the default choice.</p>
+						    <p>Pacio will deliver the semantic web and provide the most significant advance in accounting and management since the invention of double entry bookkeeping 500 years ago.</p>
+						 </span>
+						<hr>                     
+					   </div>
+					 <div class="column is-6">
+				   <img src="assets/images/globalytics.png" alt="">
+				 </div>  
+			  </div>
+			<!-- /UI block -->
+		</div>
+	</section>
+	<!-- /UI section -->
+				<!-- UI section First -->
+  <section class="section">
+		  <!-- UI block -->
+		  <div class="columns is-vcentered">
+			  <!-- Content -->
+				  <!-- Large UI -->
+				  <div class="column is-6">
+				  <img src="assets/images/globalytics.png" alt="">
+			  </div>
+				  <div class="column is-6">
+					  <div class="icon-subtitle"><i class="im im-icon-Laptop-Phone"></i></div>
+					  <h2 class="title section-subtitle dark-text text-bold is-2">
+						  Semantic Blockchain API
+					  </h2>
+					  <span class="section-feature-description"> Decentralised technology with Pacio will result in an explosion of applications that truly deliver the internet’s promise of knowledge, choices, opportunities, and prosperity for all, safely, inclusively and equitably.
+						  </span>
+						  <hr>
+					  </div>
+					  </div>  
+				  </div>
+		  <!-- /UI block -->
+		  </div>
+			</section>
+			   <!-- /UI block for Second Vision -->
+			 <section class="section">
+				  <div class="section product-header has-text-centered">
+						  <div class="container">
+						  <div class="columns">
+							  <div class="column">
+							  <span class="title is-3">Consensus</span>
+							  <span class="title is-3 has-text-muted">&nbsp;|&nbsp;</span>
+							  <span class="title is-4 has-text-muted">governance system</span>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </section>
+			 <!-- /UI section -->
+			  <!-- UI section -->
+			  <section class="section">
+				 <!-- UI block -->
+				 <div class="columns is-vcentered">
+					<!-- Content -->
+						<div class="column is-6">
+							<h2 class="title section-subtitle dark-text text-bold is-2">
+								Pacio Technology
+							</h2>
+							<span class="section-feature-description">Pacio will use a third generation blockchain for the security, immutability, and cryptocurrency strengths of blockchain technology, but without restricting use of Pacio to applications running on the same blockchain. Given the explosion of blockchain technology options available in 2018, Pacio has no intention of developing its own blockchain, but will work with one of the alternatives.
+							 </span>
+							<hr>                     
+						   </div>
+						 <div class="column is-6">
+					   <img src="assets/images/globalytics.png" alt="">
+					 </div>  
+				  </div>
+				<!-- /UI block -->
+			</div>
+		</section>
+		<!-- /UI section -->
+		   <section class="section">
+			<div class="container">
+				<div class=columns>
+					  <div class="column has-text-centered"> 
+							<figure class="image is-2by1">
+							  <img src="assets/images/svgs/vision_icons.svg" alt="Logo">
+							</figure>
+						  </div>					  
+				  </div>
+			  </div>
+		</section>
+
+{{ end }}

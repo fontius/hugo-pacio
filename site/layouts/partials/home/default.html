@@ -1,0 +1,227 @@
+<!-- Original April 4th download hugo-smorg 
+	
+	<section class="section hero is-fullheight" itemscope itemtype="http://schema.org/HomePage">
+	<div class="hero-head">
+		{{ partial "nav.html" . }}
+	</div>
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-8 is-offset-2 has-text-centered">
+					<h1 class="title">{{ partial "logo.html" . }}</h1>
+					<h2 class="subtitle">
+						{{ with .Site.Params.fullname }}{{ . }}
+						{{ else }}{{ "Add params:fullname" }}{{end}}
+					</h2>
+					<div class="content">
+					{{ .Content }}
+					</div>
+					<div class="columns">
+						<div class="column">
+							<h3 class="subtitle has-text-primary is-marginless">Posts</h3>
+							<ul>
+							{{ range first 5 (where .Data.Pages "Section" "post") }}
+							<li><a href="{{.Permalink}}"><span class="icon">✎</span>{{ .Title }}</a></li>
+							{{ end }}
+							<li><a href="{{ "post/" | absURL}}">More posts<span class="icon">➤</span></a></li>
+							</ul>
+						</div>
+						<div class="column">
+							<h3 class="subtitle has-text-priimary is-marginless">Projects</h3>
+							<ul>
+							{{ range first 5 (where .Data.Pages "Section" "project") }}
+							<li><a href="{{.Permalink}}"><span class="icon">※</span>{{ .Title }}</a></li>
+							{{ end }}
+							<li><a href="{{ "project/" | absURL }}">More projects<span class="icon">➤</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+</section> -->
+{{ partial "nav.html" . }}
+<section class="hero header-image">   
+              <!-- Hero caption -->
+              <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered" style="padding-top:60px;">
+                        <div class="column is-4 is-offset-1 has-text-left">
+                            <h1 class="title is-4 pb-20">
+                               <strong>Semantic decentralised data with accounting and management.</strong>
+                            </h1>
+                            <h2 class="subtitle is-5">Empower applications to provide knowledge, choices, opportunities, and prosperity for all </h2>
+                            <br>
+                        </div>
+                            <div class="column is-5 is-offset-2">
+                                <figure class="image is-4by3">
+                                <img src="assets/images/mockup22.png" alt="Pacio Overview Animation">
+                            </figure>
+                        </div>
+                      </div>
+                   </div>
+               </div>
+          </section>
+
+            <!-- /Feature Text section -->
+            <section class="section">
+                    <div class="section product-header has-text-centered">
+                        <div class="container">
+                        <div class="columns">
+                            <div class="column">
+                            <span class="title is-3">Pacio Blockchain</span>
+                            <span class="title is-3 has-text-muted">&nbsp;|&nbsp;</span>
+                            <span class="title is-4 has-text-muted ">API Protocol</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                 <!-- /Feature Text section -->
+
+         <!-- UI section -->
+         <section class="section">
+            <div class="container">
+                    <!-- UI block -->
+                    <div class="columns is-vcentered">
+                        <!-- Content -->
+                        <div class="column is-4">
+                            <h2 class="title is-4">
+                                Accounting and management
+                            </h2>
+                            <span class="section-feature-description">Pacio is an applications development and deployment platform that extends decentralised technologies to make them suitable for widespread use by applications, wherever the apps run. Pacio adds broad accounting, management, and semantic data functionalities that are interoperable across entities, jurisdictions, standards, apps, and blockchains, plus a cryptocurrency with a purpose, comprehensive governance capabilities, and an ecosystem of tools and services. </span> 
+                        </div>
+                        <!-- Large UI -->
+                        <div class="column is-9 is-offset-2">
+                            <img src="assets/images/globalytics.png" alt="">
+                        </div>
+                    </div>
+                    <!-- /UI block -->
+                </div>
+                    </section>
+                    <!-- /Feature Text section -->
+                    <section class="section has-text-centered">
+                    <div class="intro column is-8 is-offset-2">
+                        <h2 class="title">Perfect for developers</h2><br>
+                        <p class="subtitle">A  blazing fast blockchain integrated API as the ultimate source for management and accountability for all your data assets </p>
+                    </div>
+                </section>  
+            
+           <!-- /CARD section -->
+            <section class="container">
+                    <div class="columns features">
+                      <div class="column is-4">
+                        <div class="card index-card">
+                          <div class="card-image has-text-centered">
+                            <span class="icon">
+                                <i class="fas fa-code icon is-large"></i>
+                              </span>
+                          </div>
+                          <div class="card-content">
+                            <div class="content">
+                              <h4>Site developers</h4>
+                              <p>Pacio will help application developers build and deploy more useful/powerful decentralised applications, whether blockchain based or not, with integrated accounting and management</p>
+                              <div class="pt-10">
+                                <a href="#" class="button is-info">API details</a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-4">
+                        <div class="card index-card">
+                          <div class="card-image has-text-centered">
+                              <i class="fas fa-minus icon is-large"></i>
+                          </div>
+                          <div class="card-content">
+                            <div class="content">
+                              <h4>Zero transaction costs</h4>
+                              <p>Pacio will help developers of consumer or personal applications create apps which provide end user benefits of more security, control over personal data, and zero transaction costs, thereby facilitating better alternatives to current centralised web systems, and opening up new market segments such as zero cost remittances, micropayments, and data exchange/markets.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-4">
+                        <div class="card index-card">
+                                <div class="card-image has-text-centered">
+                          <span class="icon">
+                                <i class="fas fa-code icon is-large"></i>
+                              </span>
+                              </div>
+                          <div class="card-content">
+                            <div class="content">
+                              <h4> More profitable business outcomes  </h4>
+                              <p> Pacio will help developers of business applications create more competitive and useful apps which provide the consumer benefits above for the customers of a business running the app, and for the business itself, help produce more profitable outcomes through processing of business activity more comprehensively with full accounting for more insightful semantic analysis and reporting, including in real time.</p>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </section>
+                        <section class="section">
+                        <div class="section product-header has-text-centered">
+                                <div class="container">
+                                <div class="columns">
+                                    <div class="column">
+                                    <span class="title is-3">Consensus</span>
+                                    <span class="title is-3 has-text-muted">&nbsp;|&nbsp;</span>
+                                    <span class="title is-4 has-text-muted">governance system</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>   
+                     <!-- UI section -->
+                    <section class="section">
+                     <!-- UI block -->
+                     <div class="columns is-vcentered">
+                        <!-- Content -->
+                          <!-- Large UI -->
+                          <div class="column is-6">
+                            <img src="assets/images/globalytics.png" alt="">
+                        </div>
+                            <div class="column is-6">
+                                <div class="icon-subtitle"><i class="im im-icon-Laptop-Phone"></i></div>
+                                <h2 class="title section-subtitle dark-text text-bold is-2">
+                                    Future proof blockchain governments
+                                </h2>
+                                <span class="section-feature-description"> Pacio will help developers of applications for charities, NGOs, governments, regulators, foundations etc create more useful apps which provide the consumer benefits above for the users of the entity running the app, and for the entity itself, help improve its management and operation through processing of activity more comprehensively with full accounting for more insightful semantic analysis and reporting.
+                                    </span>
+                                    <hr>
+                                    <a href="#" class="button is-info">Paper details</a>  
+                               </div>
+                            </div>  
+                          </div>
+                    <!-- /UI block -->
+                </div>
+            </section>
+            <!-- /UI section -->
+             <!-- UI section -->
+             <section class="section">
+                <!-- UI block -->
+                <div class="columns is-vcentered">
+                   <!-- Content -->
+                       <div class="column is-6">
+                           <div class="icon-subtitle"><i class="im im-icon-Laptop-Phone"></i></div>
+                           <h2 class="title section-subtitle dark-text text-bold is-2">
+                               Pacio Technology
+                           </h2>
+                           <span class="section-feature-description">Pacio will use a third generation blockchain for the security, immutability, and cryptocurrency strengths of blockchain technology, but without restricting use of Pacio to applications running on the same blockchain. Given the explosion of blockchain technology options available in 2018, Pacio has no intention of developing its own blockchain, but will work with one of the alternatives.
+                            </span>
+                           <hr>
+                           <a href="#" class="button is-info">Paper details</a>                      
+                          </div>
+                        <div class="column is-6">
+                      <img src="assets/images/globalytics.png" alt="">
+                    </div>  
+                 </div>
+               <!-- /UI block -->
+           </div>
+       </section>
+	   <!-- /UI section -->
+	   
+
+	<div class="hero-foot">
+		{{ partial "footer.html" . }}
+			</div>

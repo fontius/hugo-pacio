@@ -1,0 +1,186 @@
+{{ define "main" }}
+<!-- 
+	Can be expanded later to inluce detailed member pages as a section.
+	use for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+	Each will be presented as a single page with a breadcrumb menu at the top
+	allowing for navigation among related pages in the section.
+
+-->
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/team.html</p>{{ end -}}
+<section class="hero is-medium is-info">
+	<!-- Hero caption -->
+	<div class="hero-body ">
+	  <div class="container has-text-centered pt-30">
+		  <div class="columns is-vcentered">
+			  <div class="column is-6 is-offset-3 has-text-centered has-text-success">
+				  <h1 class="title is-3">
+					{{ .Title }}
+				  </h1>
+				  <h2 class="subtitle is-5 light-text">
+					{{ .Description }}
+				  </h2>
+				  <br>
+			   
+			  </div>
+		  </div>
+	  </div> 
+  </div>
+</section>
+
+
+
+<!-- /Main Content Layout-->
+<!-- /Main Content Heading -->
+<div class="section no-padding fade-in three">
+			<div class="section">
+					<div class="container">            
+							<div class="columns">                          
+									<div class="column is-one-half has-text-centered">
+									<figure class="image is-2by2">
+									<img src="assets/images/svgs/aboutus.svg" alt="Team icon">
+					            </figure>
+									</div>                         
+									<div class="column">
+											<div class="content">
+											<p>The Pacio Core and Foundation team will grow as presale and full ICO funding becomes available, in order to fully implement the Vision, to include:</p>
+									<ul>
+									<li>CEO</li>
+									<li>CTO</li>
+									<li>CFO</li>
+									<li>Developers – up to 30</li>
+									<li>Marketing</li>
+									<li>Educators</li>
+									<li>Creative designers</li>
+									<li>Accountants</li>
+									<li>Administrators</li>
+									</ul>  
+								</div>
+							 </div>
+							</div>
+							</div>
+		</section>
+<!-- /Main Content Heading Ends-->
+
+<!-- /Profile Cards-->      
+<section class="section">
+	<div class="container">
+			<div class="columns">
+					<div class="column">
+							<div class="card" id="profile-card">
+									<div class="card-content">
+											<div class="media">
+													<div class="media-left">
+															<figure class="image is-96x96">
+																	<img src="/assets/images/profiles/davidjohnhartley.jpg">
+															 </figure>
+														</div>
+													<div class="media-content pt-20">
+															<p class="title is-5">David Hartley </p>
+															<p class="subtitle is-6">CEO</p>
+													</div>
+											</div>
+											<div class="content">
+												David’s experience has encompassed civil engineering, software <a href="#">more</a>
+											</div>
+											<footer class="card-footer">
+													<p class="card-footer-item">
+														 <span>   
+															<a href="#" i class="fa fa-globe"></i></a>
+														</span>
+													</p>
+													<p class="card-footer-item">
+														<span>   
+															<a href="http://www.davidjohnhartley.com/" i class="fab fa-github"></i></a>
+														</span>
+													</p>
+													<p class="card-footer-item">
+																	<span>   
+																		<a href="http://www.davidjohnhartley.com/" i class="fab fa-linkedin"></i></a>
+																	</span>
+																</p>
+																<p class="card-footer-item">
+																			<span>   
+																				<a href="http://www.davidjohnhartley.com/" i class="fab fa-facebook"></i></a>
+																			</span>
+																		</p>
+																	</footer>
+														        </div>
+															</div>
+													      </div>
+
+					<div class="column">
+							<div class="card" id="profile-card">
+									<div class="card-content">
+											<div class="media">
+													<div class="media-left">
+															<figure class="image is-96x96">
+																	<img src="/assets/images/profiles/keithcleland.jpg">
+															 </figure>
+														</div>
+													<div class="media-content pt-20">
+															<p class="title is-5">Dr Keith N. Cleland</p>     
+													</div>
+											</div>
+											<div class="content">
+													Currently Professor and Head, Financial Management Department <a href="#">more</a>
+											</div>
+											<footer class="card-footer">
+													<p class="card-footer-item">
+														 <span>   
+															<a href="#" i class="fa fa-globe"></i></a>
+														</span>
+													</p>
+													<p class="card-footer-item">
+																	<span>   
+																		<a href="http://www.davidjohnhartley.com/" i class="fab fa-linkedin"></i></a>
+																	</span>
+																</p>
+												</footer>
+									</div>
+							</div>
+					</div>
+
+					<div class="column">
+							<div class="card" id="profile-card">
+									<div class="card-content">
+											<div class="media">
+													<div class="media-left">
+															<figure class="image is-96x96">
+																	<img src="/assets/images/profiles/trevorwatters.jpg">
+															 </figure>
+														</div>
+													<div class="media-content pt-20">
+															<p class="title is-5">Trevor Watters</p>     
+													</div>
+											</div>
+											<div class="content">
+													Moved from a banking background to grow a CPA Public <a href="#">more</a>
+											</div>
+											<footer class="card-footer">
+													<p class="card-footer-item">
+														 <span>   
+															<a href="#" i class="fa fa-globe"></i></a>
+														</span>
+													</p>
+													<p class="card-footer-item">
+																	<span>   
+																		<a href="http://www.davidjohnhartley.com/" i class="fab fa-linkedin"></i></a>
+																	</span>
+																</p>
+												</footer>
+									</div>
+							</div>
+					</div>
+			 </div>
+	 </section>
+<!-- /Profile Cards-->    
+
+{{ end }}

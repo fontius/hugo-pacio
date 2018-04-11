@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<!-- Sidebar is duplicated SUBSECTION Layout, Subsection layout with breadcrumbs is not being
+	used. Instead Adjustments have been made for SIDE BAR menu, breadcrums option
+	removed in SECTION-CRUMBS <aside class="menu" aria-label="breadcrumbs">
+    Inside Content for WHITEPAPER add 
+	layout: sidebar 
+	(to all marddown files and Index MDs)
+	to pick up sidebar menu system from SECTION_CRUMBS PARTIAL below
+	in sidebar menu column. Section Crumbs partial contains the 
+	<aside class="menu" aria-label="breadcrumbs">
+		That used to be <nav class in orginal
+
+	initial instructions for breadcrumbs -Breadcrumbs used for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+	Each will be presented as a single page with a breadcrumb menu at the top
+	allowing for navigation among related pages in the section.
+
+	REMOVE breadcrumb nav menu for sidebar scroll, use bread crumbs options for smaller
+	sections with just a few pages.
+
+before instructions - ADD  layout: sidebar.html by copying this file, create sidebar menu partial see (section-crumbs.html partial)
+Create partial for sidebar
+add frontmatter settings for section.html and partial
+-->
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/sidebar.html</p>{{ end -}}
+<section class="hero is-small is-info">
+		<!-- Hero caption -->
+		<div class="hero-body ">
+		  <div class="container has-text-centered mt-60">
+			  <div class="columns is-vcentered">
+				  <div class="column is-6 is-offset-3 has-text-centered has-text-success">
+					  <h1 class="title is-5">
+						{{ .Params.subtitle }}
+					  </h1>
+				  </div>
+			  </div>
+		  </div> 
+	  </div>
+	</section>
+
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+			<div class="columns is-fullheight">
+				<div class="column is-3 is-sidebar-menu is-hidden-mobile is-scrollable">
+					<h2 class="is-size-5">White Paper</h2>
+						{{ partial "section-crumbs.html" . }}
+					</div>
+					<div class="column is-6 is-main-content ">
+							<article class="content">
+									<h1 class="title is-3">{{ .Title }}</h1>
+									{{- partial "page-status.html" . -}}
+									{{- .Content }}
+									<hr>
+								</article>
+					</div>
+					</div>
+
+	
+</section>
+{{ end }}
