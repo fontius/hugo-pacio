@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: fontius/hugo-pacio
+  branch: master
+
+collections:
+  - name: whitepaper
+    label: "WP Content" # Used in the UI, ie.: "New Post"
+    folder: "site/content/whitepaper" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Section Title", name: "title", widget: "string"}
+      - {label: "Section Title", name: "subtitle", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: documents
+    label: "Doc Name" # Used in the UI, ie.: "New Post"
+    folder: "site/content/documents" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Section Title", name: "title", widget: "string"}
+      - {label: "Section Title", name: "subtitle", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: post
+    label: "New Post" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Section Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Body", name: "body", widget: "markdown"}
