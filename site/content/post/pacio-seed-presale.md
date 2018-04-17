@@ -1,7 +1,6 @@
 ---
 title: Update After the Pacio Seed Presale
 date: 2017-11-16
-menu: main
 tags:
 - pacio
 - presale

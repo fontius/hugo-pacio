@@ -2,10 +2,13 @@
 title: Marcell Nimfuehr joins Pacio as CMO
 description: 'Marcell Nimfuehr has joined Pacio as CMO (Chief Marketing Officer) '
 date: '2018-04-16'
+tags:
+- pacio
+- team
 ---
 Marcell Nimfuehr has joined Pacio as CMO (Chief Marketing Officer), effective immediately. Like Fransisca earlier in April, Marcell is a significant addition to the Pacio team. Welcome Marcell!
 
-Marcell has 24 years of experience in technology, start-ups, communications, lobbying, advocacy, fundraising including via ICOs, and in training in developing countries. He is a software engineer by training who has gravitated towards writing and strategic planning for startups, with the visual arts as a passion.
+Marcell has 24 years of experience in technology, start-ups, communications, lobbying, advocacy, fundraising including via ICOs, and in training in developing countries. He is a software engineer by training who has gravitated towards writing and strategic planning for startups, with the visual arts as a passion.
 
 Marcel is moving to Saint Lucia from his home city of Vienna by the end of April 2018 to be working at the core of Pacio full time. His presence on island, coupled with his knowledge and ideas, will not only be great for Pacio, but will also help with the development of Saint Lucia as a cryptographic and decentralised technology centre.
 
@@ -17,7 +20,8 @@ For more here is a note from Marcell himself:
 
 Pacio is a gem. It tackles the holy grail of the Internet in establishing the first usable framework for the Semantic Web. You see, you never know what content you are finding when you look up a topic. Will it be a shop or a piece of information, will it be good or not? Instead of a useful classification of content, you look for a needle in a needle stack (the haystack would be easy, just take a big magnet).  That’s not only a problem with content but extends to topics like business data in every corporation. There are no global standards that enable easy exchange of information. You can’t, for instance, synchronize the accounting of a US-American company with its UK-based subsidiary. This inefficiency is costly on a global scale.
 
-I mention accounting because that’s where Pacio is coming from. Founders David Hartley, Keith Cleland, and Trevor Watters were among the pioneers of computerised accounting. David breathes business logic and exudes inventive genius. Please excuse my hyperbole but I am so excited. David created a framework that will dissect every potential information – from the needle stack into neatly classified and ordered needles, to continue the analogy.
+I mention accounting because that’s where Pacio is coming from. Founders David Hartley, Keith Cleland, and Trevor Watters were among the pioneers of computerised accounting. David breathes business logic and exudes inventive genius. Please excuse my hyperbole but I am so excited. David created a framework that will dissect every potential information – from the needle stack into neatly classified and ordered needles, to continue the analogy.
+
 
 Keith and Trevor’s invention TARI (Target Average Rate Index), which will be built into Pacio, allows feedback to effect business improvement in real time, rather than only by analysis after the event. TARI has proved to be the most effective and least expensive means of improving productivity and bottom line performance of business across the spectrum of manufacturing, retail, trade, transport and commercial services in general. TARI also has potential for positive impact on national productivity at no cost to government.
 

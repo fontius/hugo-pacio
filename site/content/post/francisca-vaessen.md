@@ -1,13 +1,12 @@
 ---
 title: Francisca Vaessen
 date: 2018-04-09
-menu: main
 tags:
 - pacio
 - team
 ---
 
-TI am delighted to announce that Francisca has joined Pacio as our Internationalisation Coordinator.
+I am delighted to announce that Francisca has joined Pacio as our Internationalisation Coordinator.
 
 Fransisca is an international person, with European and African heritage, who lives and was educated in Holland, which has long been a country of internationalists. The second formative aspect to Fransisca for her role with Pacio, is her involvement with technology, web design and marketing since her teenage years when she started with HTML, CSS, and JavaScript, plus Photoshop for the graphics.
 

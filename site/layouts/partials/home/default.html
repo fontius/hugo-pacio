@@ -1,46 +1,4 @@
-<!-- Original April 4th download hugo-smorg 
-	
-	<section class="section hero is-fullheight" itemscope itemtype="http://schema.org/HomePage">
-	<div class="hero-head">
-		{{ partial "nav.html" . }}
-	</div>
-	<div class="hero-body">
-		<div class="container">
-			<div class="columns">
-				<div class="column is-8 is-offset-2 has-text-centered">
-					<h1 class="title">{{ partial "logo.html" . }}</h1>
-					<h2 class="subtitle">
-						{{ with .Site.Params.fullname }}{{ . }}
-						{{ else }}{{ "Add params:fullname" }}{{end}}
-					</h2>
-					<div class="content">
-					{{ .Content }}
-					</div>
-					<div class="columns">
-						<div class="column">
-							<h3 class="subtitle has-text-primary is-marginless">Posts</h3>
-							<ul>
-							{{ range first 5 (where .Data.Pages "Section" "post") }}
-							<li><a href="{{.Permalink}}"><span class="icon">✎</span>{{ .Title }}</a></li>
-							{{ end }}
-							<li><a href="{{ "post/" | absURL}}">More posts<span class="icon">➤</span></a></li>
-							</ul>
-						</div>
-						<div class="column">
-							<h3 class="subtitle has-text-priimary is-marginless">Projects</h3>
-							<ul>
-							{{ range first 5 (where .Data.Pages "Section" "project") }}
-							<li><a href="{{.Permalink}}"><span class="icon">※</span>{{ .Title }}</a></li>
-							{{ end }}
-							<li><a href="{{ "project/" | absURL }}">More projects<span class="icon">➤</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> 
-</section> -->
+
 {{ partial "nav.html" . }}
 <section class="hero header-image">   
               <!-- Hero caption -->
@@ -123,7 +81,7 @@
                               <h4>Site developers</h4>
                               <p>Pacio will help application developers build and deploy more useful/powerful decentralised applications, whether blockchain based or not, with integrated accounting and management</p>
                               <div class="pt-10">
-                                <a href="#" class="button is-info">API details</a>
+                                <a href="#" class="button is-primary is-outlined">API details</a>
                             </div>
                             </div>
                           </div>
@@ -151,7 +109,7 @@
                               </div>
                           <div class="card-content">
                             <div class="content">
-                              <h4> More profitable business outcomes  </h4>
+                              <h4>More profitable business outcomes </h4>
                               <p> Pacio will help developers of business applications create more competitive and useful apps which provide the consumer benefits above for the customers of a business running the app, and for the business itself, help produce more profitable outcomes through processing of business activity more comprehensively with full accounting for more insightful semantic analysis and reporting, including in real time.</p>  
                             </div>
                           </div>
@@ -189,7 +147,7 @@
                                 <span class="section-feature-description"> Pacio will help developers of applications for charities, NGOs, governments, regulators, foundations etc create more useful apps which provide the consumer benefits above for the users of the entity running the app, and for the entity itself, help improve its management and operation through processing of activity more comprehensively with full accounting for more insightful semantic analysis and reporting.
                                     </span>
                                     <hr>
-                                    <a href="#" class="button is-info">Paper details</a>  
+                                    <a href="#" class="button is-primary is-outlined">Paper details</a>  
                                </div>
                             </div>  
                           </div>
@@ -210,7 +168,7 @@
                            <span class="section-feature-description">Pacio will use a third generation blockchain for the security, immutability, and cryptocurrency strengths of blockchain technology, but without restricting use of Pacio to applications running on the same blockchain. Given the explosion of blockchain technology options available in 2018, Pacio has no intention of developing its own blockchain, but will work with one of the alternatives.
                             </span>
                            <hr>
-                           <a href="#" class="button is-info">Paper details</a>                      
+                           <a href="#" class="button is-primary is-outlined">Paper details</a>                      
                           </div>
                         <div class="column is-6">
                       <img src="assets/images/globalytics.png" alt="">
@@ -219,8 +177,7 @@
                <!-- /UI block -->
            </div>
        </section>
-	   <!-- /UI section -->
-	   
+	   <!-- /UI section -->   
 
 	<div class="hero-foot">
 		{{ partial "footer.html" . }}

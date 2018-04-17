@@ -3,9 +3,12 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
 
 // Customization's in partials
-$family-sans-serif: Ubuntu;
-$title-stack:  Open Sans, sans-serif;
+//$family-sans-serif: Open Sans, sans-serif;
+//$title-stack:  Open Sans, sans-serif;
 
+// New variables 
+$family-heading: "Ubuntu", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
 
 $primary: $orange; 
 $info: $blue; 
@@ -31,13 +34,15 @@ $menu-list-border-left: 1px solid $green;
 
 $radius-large: 1em;
 $link: hsl(217, 71%,  53%);
+$large-shadow: 0 10px 20px rgba(#000, 0.05);
+
+
 $card-background-color:	$grey-white;
 $card-header-shadow: 0 1px 2px rgba($red, 0.1);
 $card-footer-border-top: none;
 $card-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
 $card-color: $blue-dark;
 
-$pagination-color: $green;
 $pagination-color: $primary;
 $pagination-border-color: $primary;
 $pagination-current-background-color: $primary;
@@ -50,18 +55,25 @@ $pagination-current-background-color: $primary;
 html{
     background: $smoke-white;
 }
+.navbar-brand {
+    font-family: $family-heading;
+}
 body{
     color: $blue-darkest;
 }
 
 h1 {
- color: $orange;
- font-family: $title-stack;
+ color: $primary;
+ font-family: $family-sans-serif;
 }
 
 h2{
- color: $orange;
+ color: $primary;
  font-family: $family-sans-serif;
+}
+h3{
+ color: $primary;
+ font-family: $family-heading;
 }
 // Timed loop animations that sync for background and foreground, for now just static 
 .header-image{ 
