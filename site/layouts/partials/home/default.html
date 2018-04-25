@@ -1,6 +1,7 @@
 
 {{ partial "nav.html" . }}
-<section class="hero header-image">   
+<section class="hero header-image">
+    <div id="particles-js">
               <!-- Hero caption -->
               <div class="hero-body">
                 <div class="container has-text-centered">
@@ -20,10 +21,10 @@
                       </div>
                    </div>
                </div>
+            </div>   
           </section>
-
             <!-- /Feature Text section -->
-            <section class="section">
+            <section class="section section-alt">
                     <div class="section product-header has-text-centered">
                         <div class="container">
                         <div class="columns">
@@ -37,7 +38,6 @@
                     </div>
                 </section>
                  <!-- /Feature Text section -->
-
          <!-- UI section -->
          <section class="section">
             <div class="container">
@@ -181,4 +181,8 @@
 
 	<div class="hero-foot">
 		{{ partial "footer.html" . }}
-			</div>
+            </div>
+            
+ <script src="js/particles.js"></script>
+ <script src="js/particles.min.js"></script>
+ <script src="js/app.js"></script>

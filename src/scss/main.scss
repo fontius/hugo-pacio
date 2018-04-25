@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu:300,400,700');
 // Import the rest of Bulma's initial variables
 @import "node_modules/bulma/sass/utilities/initial-variables";
 
 // Customization's in partials
-//$family-sans-serif: Open Sans, sans-serif;
-//$title-stack:  Open Sans, sans-serif;
+// $family-sans-serif: Open Sans, sans-serif;
+// $title-stack:  Open Sans, sans-serif;
 
 // New variables 
 $family-heading: "Ubuntu", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
-$family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Source Sans Pro', sans-serif", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
 
 $primary: $orange; 
 $info: $blue; 
@@ -24,7 +24,7 @@ $green:        hsl(166.2, 100%, 34.9%);
 $turquoise:    hsl(207.7, 56.4%, 45.9%); 
 $blue:         hsl(199.6, 97.4%, 45.5%);
 $red:          hsl(359.6, 100%, 72.4%);
-$smoke-white:  hsl(0, 0%, 98.8%);
+$smoke-white:  hsl(0, 0%, 99%);
 $grey-white:   hsl(0, 0%, 94.9%);
 $blue-dark:    hsl(200, 100%, 26.5%);
 $blue-darkest: hsl(200.4, 100%, 11%);
@@ -35,7 +35,6 @@ $menu-list-border-left: 1px solid $green;
 $radius-large: 1em;
 $link: hsl(217, 71%,  53%);
 $large-shadow: 0 10px 20px rgba(#000, 0.05);
-
 
 $card-background-color:	$grey-white;
 $card-header-shadow: 0 1px 2px rgba($red, 0.1);
@@ -58,23 +57,38 @@ html{
 .navbar-brand {
     font-family: $family-heading;
 }
-body{
-    color: $blue-darkest;
+body {
+    color: $dark;
+}
+#particles-js {
+    height: 100%;
+}
+.logo-text{
+    font-family: $family-heading;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $primary;
 }
 
 h1 {
- color: $primary;
+ color: $blue-darkest;
  font-family: $family-sans-serif;
 }
 
 h2{
- color: $primary;
+ color: $blue-dark;
  font-family: $family-sans-serif;
 }
+
 h3{
  color: $primary;
  font-family: $family-heading;
 }
+
+.section-alt {
+    background-color: #f0eded;
+}
+
 // Timed loop animations that sync for background and foreground, for now just static 
 .header-image{ 
       background-image: linear-gradient(rgba(255, 255, 255, 0.99),rgba(0, 0, 0, 0)),url('/assets/images/stock/header-main.svg');

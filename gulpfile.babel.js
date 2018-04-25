@@ -25,7 +25,7 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
 gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
-// Compile CSS with PostCSS
+// Compile CSS with PostCSS modify for SCSS Bulma include paths node modules
 gulp.task("css", () => (
   gulp.src("./src/scss/*.scss")
     .pipe(sass({
@@ -56,7 +56,7 @@ gulp.task("js", (cb) => {
 
 // Move all fonts in a flattened directory
 gulp.task('fonts', () => (
-  gulp.src("./src/fonts/**/*")
+  gulp.src("./src/assets/fonts/**/*")
     .pipe(flatten())
     .pipe(gulp.dest("./dist/fonts"))
     .pipe(browserSync.stream())
@@ -70,7 +70,7 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/scss/**/*.scss", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
