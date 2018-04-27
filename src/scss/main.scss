@@ -28,6 +28,11 @@ $smoke-white:  hsl(0, 0%, 99%);
 $grey-white:   hsl(0, 0%, 94.9%);
 $blue-dark:    hsl(200, 100%, 26.5%);
 $blue-darkest: hsl(200.4, 100%, 11%);
+$burgandy:     hsl(0, 0%, 16.11%);
+
+$size-1: 4rem;
+$size-2: 3rem;
+$size-3: 2rem;
 
 $menu-item-active-background-color: $green;
 $menu-list-border-left: 1px solid $green;
@@ -60,9 +65,7 @@ html{
 body {
     color: $dark;
 }
-#particles-js {
-    height: 100%;
-}
+
 .logo-text{
     font-family: $family-heading;
     font-weight: 700;
@@ -71,28 +74,37 @@ body {
 }
 
 h1 {
- color: $blue-darkest;
- font-family: $family-sans-serif;
+ color: $burgandy;
+ font-family: $family-heading;
+ font-weight: 600; 
 }
 
 h2{
  color: $blue-dark;
- font-family: $family-sans-serif;
+ font-family: $family-heading;
+ font-weight: 600;
+
 }
 
-h3{
- color: $primary;
+h3 {
+ color: $burgandy;
  font-family: $family-heading;
+ font-weight: 600;
 }
 
 .section-alt {
     background-color: #f0eded;
 }
 
-// Timed loop animations that sync for background and foreground, for now just static 
 .header-image{ 
-      background-image: linear-gradient(rgba(255, 255, 255, 0.99),rgba(0, 0, 0, 0)),url('/assets/images/stock/header-main.svg');
-   }
+      background-image: url('/assets/images/hero.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #292929;
+      height: 80vh;
+    }
 
 .index-card{
     padding-top: 2em;
@@ -109,14 +121,14 @@ a {
 }
 
 a:hover {
-    color: $orange;
+    color: $success;
     font-style: none;
 }
 a:active {
-    color: $orange
+    color: $success;
 }
 a.nav-item:hover {
-    color: $orange;
+    color: $success;
 }
 .title {
     color: $blue-darkest;
@@ -154,6 +166,10 @@ ul {
 .huge-pb {
     padding-bottom: 100px;
 }
+
+.p-50 {
+    padding: 50px !important;
+}
 .pb-5 {
     padding-bottom: 5px !important;
 }
@@ -163,6 +179,10 @@ ul {
 .pb-20 {
     padding-bottom: 20px !important;
 }
+.pb-80 {
+    padding-bottom: 80px !important;     
+}
+
 .pt-10 {
     padding-top: 10px !important;
 }
@@ -174,6 +194,13 @@ ul {
 }
 .pt-30 {
     padding-top: 30px !important;
+}
+.pt-40 {
+    padding-top: 40px !important;
+}
+
+.pt-60 {
+    padding-top: 60px !important;
 }
 
 // Paper Side Navigation
