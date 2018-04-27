@@ -51,13 +51,9 @@ menu:
           url: "whitepaper/"
           identifier: "whitepaper"
           weight: 20
-        - name: "DOCUMENTS"
-          url: "documents/"
-          identifier: "documents"
-          weight: 30
         - name: "BLOG"
           url: "post/"
-          weight: 40
+          weight: 30
         # Other single pages not within a section folder can be  
         # added to this menu in front matter of the document i.e. contact.md
 
