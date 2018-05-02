@@ -47,9 +47,9 @@ $card-footer-border-top: none;
 $card-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
 $card-color: $blue-dark;
 
-$pagination-color: $primary;
-$pagination-border-color: $primary;
-$pagination-current-background-color: $primary;
+$pagination-color: $success;
+$pagination-border-color: $success;
+$pagination-current-background-color: $success;
 
 // Import the rest of Bulma
 @import "node_modules/bulma/bulma";
@@ -59,11 +59,14 @@ $pagination-current-background-color: $primary;
 html{
     background: $smoke-white;
 }
+
 .navbar-brand {
-    font-family: $family-heading;
-    
+    font-family: $family-heading;   
 }
+
 body {
+    font-size: 16px; 
+    line-height: 1.5;
     color: $dark;
 }
 
@@ -77,6 +80,30 @@ body {
     font-size: 2.5rem;
     color: $turquoise;
 }
+
+a {
+    color: $link;
+  }
+  
+  a:hover {
+      color: $success;
+      font-style: none;
+  }
+  a:active {
+      color: $success;
+  }
+  a.nav-item:hover {
+      color: $success;
+  }
+  .title {
+      color: $blue-darkest;
+  }
+  .subtitle {
+      color: $blue-dark;
+  }
+  ul {
+    padding: 0;
+  }
 
 h1 {
  color: $burgandy;
@@ -101,6 +128,7 @@ h3 {
     background-color: #f0eded;
 }
 
+
 .header-image{ 
       background-image: url('/assets/images/hero.jpg');
       background-position: center center;
@@ -108,42 +136,60 @@ h3 {
       background-attachment: fixed;
       background-size: cover;
       background-color: #292929;
-      height: 80vh;
+      height: 65vh;
     }
 
-.index-card{
-    padding-top: 2em;
-}
+//Clean up naming for Profile Cards **
 
-#profile-card{
-    .card-content{
-        padding: .5em;
-    } 
+    .testimonials, .demo {
+        position: relative;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        //item
+        .testimonial-item {
+            margin: 40px;
+            outline: none !important;
+            //avatar
+            .testimonial-avatar {
+                display: flex;
+                justify-content: center;
+                img {
+                    border-radius: 100px;
+                    width: 75px;
+                    height: 75px;
+                    position: relative;
+                    top: -40px;
+                }
+            }
+            //meta
+            .testimonial-name {
+                text-align: center;
+                h3 {
+                    font: $family-heading;
+                    font-size: 18px;
+                    color: $turquoise;
+                    position: relative;
+                    top: -20px;
+                }
+                span {
+                    font: $family-sans-serif;
+                    font-size: 14px;
+                    color: $blue-darkest;
+                    position: relative;
+                    top: -15px;
+                }
+            }
+            //content
+            .testimonial-content {
+                p {
+                    padding: 20px 30px;
+                }
+            }
+        }
     }
 
-a {
-  color: $link;
-}
 
-a:hover {
-    color: $success;
-    font-style: none;
-}
-a:active {
-    color: $success;
-}
-a.nav-item:hover {
-    color: $success;
-}
-.title {
-    color: $blue-darkest;
-}
-.subtitle {
-    color: $blue-dark;
-}
-ul {
-  padding: 0;
-}
 // HELPER CLASSES 
 
 .mb-20 {
@@ -207,7 +253,9 @@ ul {
 .pt-60 {
     padding-top: 60px !important;
 }
-
+.pt-80 {
+    padding-top: 60px !important;
+}
 // Paper Side Navigation
 
 .menu {
